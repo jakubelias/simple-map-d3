@@ -14,8 +14,7 @@
 <script type="text/javascript">
     (function ($) {
         $(document).ready(function () {
-
-            var europePopMap = SimpleMapD3({
+            var europeMap = SimpleMapD3({
                 container: '.simple-map-container',
                 datasource: 'example-data/europe-population-density-geocommons.geo.json',
                 colorSet: 'Spectral',
@@ -24,7 +23,7 @@
                 colorReverse: true,
                 projection: 'albers',
                 rotation: [0, 0, -10],
-                canvasDragOn: true,
+                canvasDragOn: false,
                 tooltipContent: function(d) {
                     var p = d.properties;
                     return '<h5>' + p.country + '</h5>' +
