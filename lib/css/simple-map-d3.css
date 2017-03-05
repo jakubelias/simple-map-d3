@@ -1,6 +1,12 @@
 /**
  * Main CSS for Simple Map D3.
  */
+
+.simple-map-container{
+  width: 800px;
+  height: 800px;
+}
+
 .simple-map-d3-tooltip-container {
   position: relative;
 }
